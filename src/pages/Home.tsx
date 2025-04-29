@@ -394,7 +394,7 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
             {
-              icon: <Burger className="h-10 w-10 text-orange-600" />,
+              icon: <UtensilsCrossed className="h-10 w-10 text-orange-600" />,
               title: "Mood-Matched Food",
               description:
                 "Our algorithm analyzes your current mood and suggests scientifically-backed food combinations.",
