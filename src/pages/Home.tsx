@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -10,7 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Star, MapPin, Clock, ChevronRight, Pizza, Burger, Coffee } from "lucide-react";
+import { Star, MapPin, Clock, ChevronRight, Pizza, UtensilsCrossed, Coffee } from "lucide-react";
 
 const moods = [
   { id: 1, name: "Happy", emoji: "😊" },
