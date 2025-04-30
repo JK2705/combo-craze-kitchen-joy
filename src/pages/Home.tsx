@@ -1,6 +1,5 @@
 
 import React from "react";
-import Navbar from "@/components/layout/Navbar";
 import HeroBanner from "@/components/home/HeroBanner";
 import HowItWorks from "@/components/home/HowItWorks";
 import MoodSelector from "@/components/home/MoodSelector";
@@ -21,7 +20,6 @@ import {
 const Home: React.FC = () => {
   return (
     <div className="min-h-screen bg-orange-50">
-      <Navbar />
       <HeroBanner bannerImages={bannerImages} />
       <HowItWorks />
       <MoodSelector moods={moods} />

@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./contexts/AuthContext";
+import Layout from "./components/layout/Layout";
 import Index from "./pages/Index";
 import Home from "./pages/Home";
 import Restaurants from "./pages/Restaurants";
@@ -29,20 +30,20 @@ const App = () => (
         <Sonner />
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/explore" element={<Index />} />
-            <Route path="/restaurants" element={<Restaurants />} />
-            <Route path="/restaurant/:id" element={<RestaurantMenu />} />
-            <Route path="/mood-picker" element={<MoodPicker />} />
-            <Route path="/combo-builder" element={<ComboBuilder />} />
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/profile" element={<Profile />} />
+            <Route path="/" element={<Layout><Home /></Layout>} />
+            <Route path="/explore" element={<Layout><Index /></Layout>} />
+            <Route path="/restaurants" element={<Layout><Restaurants /></Layout>} />
+            <Route path="/restaurant/:id" element={<Layout><RestaurantMenu /></Layout>} />
+            <Route path="/mood-picker" element={<Layout><MoodPicker /></Layout>} />
+            <Route path="/combo-builder" element={<Layout><ComboBuilder /></Layout>} />
+            <Route path="/cart" element={<Layout><Cart /></Layout>} />
+            <Route path="/about" element={<Layout><About /></Layout>} />
+            <Route path="/contact" element={<Layout><Contact /></Layout>} />
+            <Route path="/login" element={<Layout><Login /></Layout>} />
+            <Route path="/register" element={<Layout><Register /></Layout>} />
+            <Route path="/profile" element={<Layout><Profile /></Layout>} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<Layout><NotFound /></Layout>} />
           </Routes>
         </BrowserRouter>
       </AuthProvider>

@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <UtensilsCrossed className="h-8 w-8 text-orange-600" />
-            <span className="font-bold text-xl md:text-2xl text-orange-600">CraveCraze</span>
+            <span className="font-bold text-xl md:text-2xl text-orange-600">FeastFusion</span>
           </Link>
 
           {/* Desktop Navigation */}
