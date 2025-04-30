@@ -8,7 +8,7 @@ const CtaSection: React.FC = () => {
     <div className="bg-orange-600 text-white py-16">
       <div className="max-w-3xl mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold mb-4 animate-fade-in">
-          Ready to Try Combo Craze Kitchen?
+          Ready to Try CraveCraze?
         </h2>
         <p className="text-xl mb-8 animate-fade-in">
           Find your perfect food mood and get it delivered to your door
